@@ -1,0 +1,24 @@
+{
+    "manifest_version":3,
+    "name": "EDjs-dom",
+    "version": "0.0.11",
+    "description":"Extension para modificar el DOM de cualquier sitio",
+    "icons":{
+        "16":"assets/images/icons/icon16.png",
+        "32":"assets/images/icons/icon32.png",
+        "48":"assets/images/icons/icon48.png",
+        "128":"assets/images/icons/icon128.png"
+    },
+    "action": {
+        "default_title":"Edjs-DOM Extension",
+        "default_popup":"HTML/popup.html"
+    },
+    "author":"ImpDev",
+    "content_scripts": [
+        {
+            "matches":["https://*/*"],
+            "css":["CSS/ed.css"],
+            "js":["JavaScript/ed.js","JavaScript/modal.js"]
+        }
+    ]
+}
